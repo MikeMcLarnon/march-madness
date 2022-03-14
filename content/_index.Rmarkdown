@@ -1,0 +1,102 @@
+---
+title: Leaderboard
+---
+
+
+```{css, echo=FALSE}
+h1 {
+  text-align: center;
+}
+```
+
+
+
+
+![march madness logo](march_madness_logo.png)
+
+# Leaderboard
+
+``` {r include = FALSE}
+# Install Packages
+library(readr)
+library(dplyr)
+library(flextable)
+library(ggplot2)
+library(purrr)
+```
+
+
+``` {r include = FALSE}
+# Read in Data
+picks <- read_csv("../static/picks.csv")
+teams <- read_csv("../static/teams.csv")
+games <- read_csv("../static/games.csv")
+
+
+```
+
+```{r include = FALSE}
+# Plotting Fuction for table
+plotter <- function(score, best_possible_score) {
+  tibble(
+  name = "Example",
+  score = score,
+  best_possible_score = best_possible_score
+) %>% 
+  ggplot(aes(x = score, y = name)) +
+  geom_col(aes(x = best_possible_score), fill = "grey") +
+  geom_col(width = 0.5, fill = "light blue") +
+  coord_cartesian(ylim = c(0.3, 1.7), xlim = c(0, 6*16)) +
+  theme(legend.position = "none",
+        panel.grid = element_blank(),
+        axis.title = element_blank(),
+        axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        panel.background = element_blank()) 
+}
+
+```
+
+``` {r include = FALSE}
+team_stats <- teams %>% 
+  inner_join(select(games, winner), by = c("team" = "winner")) %>%
+  group_by(team, seed) %>%
+  summarize(wins = n()) %>%
+  mutate(points = seed * wins) %>%
+  left_join(mutate(select(games, loser), alive = 0), by = c("team" = "loser")) %>%
+  mutate(alive = coalesce(alive, 1),
+         possible_points_remaining = ((6 * seed) - points) * alive)
+
+leaderboard <- picks %>% 
+  left_join(team_stats) %>%
+  group_by(player) %>%
+  summarize(score = sum(points),
+            possible_points_remaining = sum(possible_points_remaining),
+            remaining_teams = sum(alive)) %>%
+  mutate(best_possible_score = score + possible_points_remaining) %>%
+  select(player, remaining_teams, score, best_possible_score) %>%
+  arrange(desc(score), desc(best_possible_score)) %>%
+  mutate(gg = map2(score, best_possible_score, plotter),
+         rank = min_rank(desc(score))) %>%
+  select(rank, player, remaining_teams, score, best_possible_score, gg)
+  
+```
+
+
+```{r echo = FALSE}
+
+flextable(leaderboard) %>% 
+  set_header_labels(rank = "Rank",
+                    player = "Player",
+                    remaining_teams = "Teams Remaining",
+                    score = "Score",
+                    best_possible_score = "Best Possible Score"
+                    ,gg = "Potential") %>%
+  mk_par(j = "gg", value = as_paragraph(gg_chunk(value = gg, width = 1, height = 1))) %>%
+  bold(i = 1, part = "header") %>%
+  # merge_at(j = 4:5, part = "header") %>%
+  autofit() %>%
+  align(align = "center", part = "all")
+
+```
+
