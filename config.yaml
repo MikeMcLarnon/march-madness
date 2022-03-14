@@ -1,4 +1,4 @@
-baseurl: "/"
+baseurl: "https://mclarnonmadness.netlify.app"
 languageCode: "en-us"
 title: "March Madness!"
 theme: "hugo-xmin"
