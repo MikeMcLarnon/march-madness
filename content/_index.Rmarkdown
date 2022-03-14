@@ -23,6 +23,8 @@ library(dplyr)
 library(flextable)
 library(ggplot2)
 library(purrr)
+library(tidyr)
+library(forcats)
 ```
 
 
@@ -37,22 +39,24 @@ games <- read_csv("../static/games.csv")
 
 ```{r include = FALSE}
 # Plotting Fuction for table
+
 plotter <- function(score, best_possible_score) {
   tibble(
-  name = "Example",
-  score = score,
-  best_possible_score = best_possible_score
-) %>% 
-  ggplot(aes(x = score, y = name)) +
-  geom_col(aes(x = best_possible_score), fill = "grey") +
-  geom_col(width = 0.5, fill = "light blue") +
+    name = "Example",
+    score = score,
+    best_possible_score = best_possible_score
+  ) %>% 
+  pivot_longer(-name, names_to = "category") %>%
+  ggplot(aes( x = value, y = name, fill = fct_relevel(category, c("best_possible_score", "score")))) +
+  geom_col(colour = "#2659AD") +
+  scale_fill_manual(values = c("white", "#2659AD")) +
   coord_cartesian(ylim = c(0.3, 1.7), xlim = c(0, 6*16)) +
-  theme(legend.position = "none",
-        panel.grid = element_blank(),
-        axis.title = element_blank(),
-        axis.text = element_blank(),
-        axis.ticks = element_blank(),
-        panel.background = element_blank()) 
+    theme(legend.position = "none",
+          panel.grid = element_blank(),
+          axis.title = element_blank(),
+          axis.text = element_blank(),
+          axis.ticks = element_blank(),
+          panel.background = element_blank())
 }
 
 ```
