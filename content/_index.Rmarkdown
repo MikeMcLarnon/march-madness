@@ -48,9 +48,9 @@ plotter <- function(score, best_possible_score) {
   ) %>% 
   pivot_longer(-name, names_to = "category") %>%
   ggplot(aes( x = value, y = name, fill = fct_relevel(category, c("best_possible_score", "score")))) +
-  geom_col(colour = "#2659AD") +
+  geom_col(colour = "#2659AD", width = .5) +
   scale_fill_manual(values = c("white", "#2659AD")) +
-  coord_cartesian(ylim = c(0.3, 1.7), xlim = c(0, 6*16)) +
+  coord_cartesian(ylim = c(0.3, 1.7), xlim = c(0, 6*16*4)) +
     theme(legend.position = "none",
           panel.grid = element_blank(),
           axis.title = element_blank(),
@@ -62,12 +62,17 @@ plotter <- function(score, best_possible_score) {
 ```
 
 ``` {r include = FALSE}
+winners <- select(games, winner) %>%
+  group_by(winner) %>%
+  summarize(wins = n())
+
+losers <- mutate(select(games, loser), alive = 0)
+  
 team_stats <- teams %>% 
-  inner_join(select(games, winner), by = c("team" = "winner")) %>%
-  group_by(team, seed) %>%
-  summarize(wins = n()) %>%
+  left_join(winners, by = c("team" = "winner")) %>%
   mutate(points = seed * wins) %>%
-  left_join(mutate(select(games, loser), alive = 0), by = c("team" = "loser")) %>%
+  left_join(losers, by = c("team" = "loser")) %>%
+  replace_na((list(wins = 0, points = 0))) %>%
   mutate(alive = coalesce(alive, 1),
          possible_points_remaining = ((6 * seed) - points) * alive)
 
