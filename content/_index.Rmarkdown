@@ -40,7 +40,7 @@ games <- read_csv("../static/games.csv")
 ```{r include = FALSE}
 # Plotting Fuction for table
 
-plotter <- function(score, best_possible_score) {
+plotter <- function(score, best_possible_score, limit) {
   tibble(
     name = "Example",
     score = score,
@@ -50,13 +50,13 @@ plotter <- function(score, best_possible_score) {
   ggplot(aes( x = value, y = name, fill = fct_relevel(category, c("best_possible_score", "score")))) +
   geom_col(colour = "#2659AD", width = .5) +
   scale_fill_manual(values = c("white", "#2659AD")) +
-  coord_cartesian(ylim = c(0.3, 1.7), xlim = c(0, 6*16*4)) +
-    theme(legend.position = "none",
-          panel.grid = element_blank(),
-          axis.title = element_blank(),
-          axis.text = element_blank(),
-          axis.ticks = element_blank(),
-          panel.background = element_blank())
+  coord_cartesian(ylim = c(0.3, 1.7), xlim = c(0, limit)) +
+  theme(legend.position = "none",
+        panel.grid = element_blank(),
+        axis.title = element_blank(),
+        axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        panel.background = element_blank())
 }
 
 ```
@@ -85,7 +85,7 @@ leaderboard <- picks %>%
   mutate(best_possible_score = score + possible_points_remaining) %>%
   select(player, remaining_teams, score, best_possible_score) %>%
   arrange(desc(score), desc(best_possible_score)) %>%
-  mutate(gg = map2(score, best_possible_score, plotter),
+  mutate(gg = map2(score, best_possible_score, plotter, limit = max(best_possible_score)),
          rank = min_rank(desc(score))) %>%
   select(rank, player, remaining_teams, score, best_possible_score, gg)
   
@@ -101,9 +101,8 @@ flextable(leaderboard) %>%
                     score = "Score",
                     best_possible_score = "Best Possible Score"
                     ,gg = "Potential") %>%
-  mk_par(j = "gg", value = as_paragraph(gg_chunk(value = gg, width = 1, height = 1))) %>%
+  mk_par(j = "gg", value = as_paragraph(gg_chunk(value = gg, width = 2, height = 1))) %>%
   bold(i = 1, part = "header") %>%
-  # merge_at(j = 4:5, part = "header") %>%
   autofit() %>%
   align(align = "center", part = "all")
 
