@@ -22,7 +22,6 @@ library(tidyr)
 picks <- read_csv("../../static/picks.csv")
 teams <- read_csv("../../static/teams.csv")
 
-
 picks %>%
   left_join(select(teams, team, region)) %>%
   pivot_wider(names_from = region, values_from = team) %>%
@@ -33,6 +32,7 @@ picks %>%
                     southwest = "Southwest",
                     south = "South") %>%
   autofit() %>%
-  bg(bg = "light blue", part = "header")
+  bg(bg = "#2659AD", part = "header") %>%
+  color(color = "white", part = "header")
 
 ```

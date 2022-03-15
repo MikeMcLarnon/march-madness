@@ -25,4 +25,4 @@ Send your picks to Mike or Kelly!
 <br>
 
 
-![bracket](mm_bracket.jpeg)
+![bracket](mm_bracket.jpg)

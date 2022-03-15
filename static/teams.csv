@@ -1,11 +1,65 @@
 ﻿team,seed,region
-Villanova,1,east
-UConn,2,west
-Memphis,8,east
-Kentucky,2,south
-Duke,1,south
-St Joes,13,southwest
-Temple,9,southwest
-Florida,8,east
-Gonzaga,2,west
-Louisville,6,south
+Gonzaga,1,west
+Georgia St.,16,west
+Boise St.,8,west
+Memphis,9,west
+Uconn,5,west
+New Mexico St,12,west
+Arkansas,4,west
+Vermont,13,west
+Alabama,6,west
+Rutgers / Notre Dame,11,west
+Texas Tech,3,west
+Montana St.,14,west
+Michigan St.,7,west
+Davidson,10,west
+Duke,2,west
+CS Fullerton,15,west
+Baylor,1,east
+Norfolk St.,16,east
+North Carolina,8,east
+Marquette,9,east
+Saint Mary's,5,east
+Wyoming / Indiana,12,east
+UCLA,4,east
+Akron,13,east
+Texas,6,east
+Virginia Tech,11,east
+Purdue,3,east
+Yale,14,east
+Murray St.,7,east
+San Fransisco,10,east
+Kentucky,2,east
+Saint Peter's,15,east
+Arizona,1,south
+Wright St. / Bryant,16,south
+Seton Hall,8,south
+TCU,9,south
+Houston,5,south
+UAB,12,south
+Illinois,4,south
+Chattanooga,13,south
+Colorado St.,6,south
+Michigan,11,south
+Tennessee,3,south
+Longwood,14,south
+Ohio St.,7,south
+Loyola Chicago,10,south
+Villanova,2,south
+Delaware,15,south
+Kansas,1,midwest
+Texas Southern / Texas A&M-CC,16,
+San Diego St.,8,
+Creighton,9,
+Iowa,5,
+Richmond,12,
+Providence,4,
+South Dakota St.,13,
+LSU,6,
+Iowa St.,11,
+Wisconsin,3,
+Colgate,14,
+USC,7,
+Miami,10,
+Auburn,2,
+Jacksonville St.,15,
