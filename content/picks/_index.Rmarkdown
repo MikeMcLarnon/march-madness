@@ -29,7 +29,7 @@ picks %>%
   set_header_labels(player = "Player",
                     east = "East",
                     west = "West",
-                    southwest = "Southwest",
+                    midwest = "Midwest",
                     south = "South") %>%
   autofit() %>%
   bg(bg = "#2659AD", part = "header") %>%
