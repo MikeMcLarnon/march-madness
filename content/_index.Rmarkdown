@@ -86,7 +86,7 @@ leaderboard <- picks %>%
   mutate(best_possible_score = score + possible_points_remaining) %>%
   select(player, remaining_teams, score, best_possible_score) %>%
   arrange(desc(score), desc(best_possible_score)) %>%
-  mutate(gg = map2(score, best_possible_score, plotter, limit = 234),
+  mutate(gg = map2(score, best_possible_score, plotter, limit = 200),
          rank = min_rank(desc(score))) %>%
   select(rank, player, remaining_teams, score, best_possible_score, gg)
 ```
