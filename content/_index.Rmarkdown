@@ -45,10 +45,10 @@ plotter <- function(score, best_possible_score, limit) {
   tibble(
     name = "Example",
     score = score,
-    best_possible_score = best_possible_score
+    remaining = best_possible_score - score
   ) %>% 
   pivot_longer(-name, names_to = "category") %>%
-  ggplot(aes( x = value, y = name, fill = fct_relevel(category, c("best_possible_score", "score")))) +
+  ggplot(aes( x = value, y = name, fill = fct_relevel(category, c("remaining", "score")))) +
   geom_col(colour = "#2659AD", width = .5) +
   scale_fill_manual(values = c("white", "#2659AD")) +
   coord_cartesian(ylim = c(0.3, 1.7), xlim = c(0, limit)) +
@@ -80,13 +80,18 @@ team_stats <- teams %>%
 leaderboard <- picks %>% 
   left_join(team_stats) %>%
   group_by(player) %>%
-  summarize(score = sum(points),
-            possible_points_remaining = sum(possible_points_remaining),
+  summarize(best_possible_score = 
+                sum(max(seed * alive) + # Championship Game
+                max(if_else(region %in% c("west", "east"), seed * alive, 0)) + # Final Four
+                max(if_else(region %in% c("south", "midwest"), seed * alive, 0)) + # Final Four
+                sum(seed * alive * 4)) + # Everyone that's still active
+                sum(if_else(alive == 0, points, 0)), # Points from everyone that's out
+            score = sum(points),
             remaining_teams = sum(alive)) %>%
-  mutate(best_possible_score = score + possible_points_remaining) %>%
   arrange(desc(score), desc(best_possible_score)) %>%
+  ungroup() %>%
   mutate(z = max(best_possible_score),
-         gg = pmap(list(score, best_possible_score, z), ~ plotter(..1, ..2, ..3)),,
+         gg = pmap(list(score, best_possible_score, 161), ~ plotter(..1, ..2, ..3)),,
          rank = min_rank(desc(score))) %>%
   select(rank, player, remaining_teams, score, best_possible_score, gg)
 ```
