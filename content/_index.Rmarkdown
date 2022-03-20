@@ -16,6 +16,7 @@ h1 {
 
 # Leaderboard
 
+Last Update `r format(Sys.time(),format="%b %d, %Y, %I:%M%p")`
 ``` {r include = FALSE}
 # Install Packages
 library(readr)
