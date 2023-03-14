@@ -1,65 +1,65 @@
-﻿team,seed,region
-Gonzaga,1,west
-Georgia St.,16,west
-Boise St.,8,west
-Memphis,9,west
-Uconn,5,west
-New Mexico St.,12,west
-Arkansas,4,west
-Vermont,13,west
-Alabama,6,west
-Notre Dame,11,west
-Texas Tech,3,west
-Montana St.,14,west
-Michigan St.,7,west
-Davidson,10,west
-Duke,2,west
-CS Fullerton,15,west
-Baylor,1,east
-Norfolk St.,16,east
-North Carolina,8,east
-Marquette,9,east
-Saint Mary's,5,east
-Indiana,12,east
-UCLA,4,east
-Akron,13,east
-Texas,6,east
-Virginia Tech,11,east
-Purdue,3,east
-Yale,14,east
-Murray St.,7,east
-San Fransisco,10,east
-Kentucky,2,east
-Saint Peter's,15,east
-Arizona,1,south
-Wright St.,16,south
-Seton Hall,8,south
-TCU,9,south
-Houston,5,south
-UAB,12,south
-Illinois,4,south
-Chattanooga,13,south
-Colorado St.,6,south
-Michigan,11,south
-Tennessee,3,south
-Longwood,14,south
-Ohio St.,7,south
-Loyola Chicago,10,south
-Villanova,2,south
-Delaware,15,south
-Kansas,1,midwest
-Texas Southern,16,midwest
-San Diego St.,8,midwest
-Creighton,9,midwest
-Iowa,5,midwest
-Richmond,12,midwest
-Providence,4,midwest
-South Dakota St.,13,midwest
-LSU,6,midwest
-Iowa St.,11,midwest
-Wisconsin,3,midwest
-Colgate,14,midwest
-USC,7,midwest
-Miami,10,midwest
-Auburn,2,midwest
-Jacksonville St.,15,midwest
+seed,team,region
+1,Alabama,south
+16,TAMU-CC/SEMO,south
+9,West Virginia,south
+8,Maryland,south
+5,San Diego St.,south
+12,Charleston,south
+13,Furman,south
+4,Virginia,south
+6,Creighton,south
+11,NC State,south
+14,UCSB,south
+3,Baylor,south
+10,Utah St.,south
+7,Missouri,south
+15,Princeton,south
+2,Arizona,south
+1,Purdue,east
+16,Texas Southern/FDU,east
+9,Florida Atlantic,east
+8,Memphis,east
+12,Oral Roberts,east
+5,Duke,east
+4,Tennessee,east
+13,Louisiana,east
+6,Kentucky,east
+11,Providence,east
+3,Kansas St.,east
+14,Montana St.,east
+10,USC,east
+7,Michigan St.,east
+2,Marquette,east
+15,Vermont,east
+1,Houston,midwest
+16,Northern Ky.,midwest
+9,Auburn,midwest
+8,Iowa,midwest
+5,Miami (FL),midwest
+12,Drake,midwest
+13,Kent St.,midwest
+4,Indiana,midwest
+6,Iowa St.,midwest
+11,Mississippi St./Pitt,midwest
+14,Kennesaw St.,midwest
+3,Xavier,midwest
+10,Penn St.,midwest
+7,Texas A&M,midwest
+15,Colgate,midwest
+2,Texas,midwest
+1,Kansas,west
+16,Howard,west
+9,Illinois,west
+8,Arkansas,west
+5,Saint Mary’s,west
+12,VCU,west
+4,UConn,west
+13,Iona,west
+6,TCU,west
+11,Arizona St./Nevada
+14,Grand Canyon,west
+3,Gonzaga,west
+7,Northwestern,west
+10,Boise St.,west
+2,UCLA,west
+15,UNC Asheville,west
