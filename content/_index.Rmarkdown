@@ -42,6 +42,7 @@ teams <- read_csv("../static/teams.csv")
 games <- read_csv("../static/games.csv")
 
 if(!all(c(games$winner,games$loser) %in% teams$team)) stop("Teams not entered correctly")
+
 ```
 
 ```{r include = FALSE}
