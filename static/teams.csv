@@ -1,65 +1,65 @@
 seed,team,region
-1,Alabama,south
-16,TAMU-CC/SEMO,south
-9,West Virginia,south
-8,Maryland,south
-5,San Diego St.,south
-12,Charleston,south
-13,Furman,south
-4,Virginia,south
-6,Creighton,south
+1,Houston,south
+16,Longwood,south
+9,Texas A&M,south
+8,Nebraska,south
+5,Wisconsin,south
+12,James Madison,south
+13,Vermont,south
+4,Duke,south
+6,Texas Tech,south
 11,NC State,south
-14,UCSB,south
-3,Baylor,south
-10,Utah St.,south
-7,Missouri,south
-15,Princeton,south
-2,Arizona,south
-1,Purdue,east
-16,FDU,east
-9,Florida Atlantic,east
-8,Memphis,east
-12,Oral Roberts,east
-5,Duke,east
-4,Tennessee,east
-13,Louisiana,east
-6,Kentucky,east
-11,Providence,east
-3,Kansas St.,east
-14,Montana St.,east
-10,USC,east
-7,Michigan St.,east
-2,Marquette,east
-15,Vermont,east
-1,Houston,midwest
-16,Northern Ky.,midwest
-9,Auburn,midwest
-8,Iowa,midwest
-5,Miami,midwest
-12,Drake,midwest
-13,Kent St.,midwest
-4,Indiana,midwest
-6,Iowa St.,midwest
-11,Pittsburgh,midwest
-14,Kennesaw St.,midwest
-3,Xavier,midwest
-10,Penn St.,midwest
-7,Texas A&M,midwest
-15,Colgate,midwest
-2,Texas,midwest
-1,Kansas,west
-16,Howard,west
-9,Illinois,west
-8,Arkansas,west
-5,Saint Mary’s,west
-12,VCU,west
-4,UConn,west
-13,Iona,west
-6,TCU,west
-11,Arizona St.,west
-14,Grand Canyon,west
-3,Gonzaga,west
-7,Northwestern,west
-10,Boise St.,west
-2,UCLA,west
-15,UNC Asheville,west
+14,Oakland,south
+3,Kentucky,south
+10,Boise St./Colorado,south
+7,Florida,south
+15,Western Kentucky,south
+2,Marquette,south
+1,Purdue,midwest
+16,Montana St./Grambling,midwest
+9,TCU,midwest
+8,Utah St.,midwest
+12,McNeese,midwest
+5,Gonzaga,midwest
+4,Kansas,midwest
+13,Samford,midwest
+6,South Carolina,midwest
+11,Oregon,midwest
+3,Creighton,midwest
+14,Akron,midwest
+10,Virginia/Colorado St.,midwest
+7,Texas,midwest
+2,Tenessee,midwest
+15,Saint Peter's,midwest
+1,UConn,east
+16,Stetson,east
+9,Northwestern,east
+8,Florida Atlantic,east
+5,San Diego St.,east
+12,UAB,east
+13,Yale,east
+4,Auburn,east
+6,BYU,east
+11,Duquesne,east
+14,Morehead St.,east
+3,Illinois,east
+10,Drake,east
+7,Washington St.,east
+15,South Dakota St.,east
+2,Iowa St.,east
+1,North Carolina,west
+16,Howard/Wagner,west
+9,Michigan St.,west
+8,Mississippi St.,west
+5,Saint Mary's,west
+12,Grand Canyon,west
+4,Alabama,west
+13,Charleston,west
+6,Clemson,west
+11,New Mexico,west
+14,Colgate,west
+3,Baylor,west
+7,Dayton,west
+10,Nevada,west
+2,Arizona,west
+15,Long Beach St.,west
