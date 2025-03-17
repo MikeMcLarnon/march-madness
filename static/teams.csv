@@ -1,65 +1,65 @@
 seed,team,region
-1,Houston,south
-16,Longwood,south
-9,Texas A&M,south
-8,Nebraska,south
-5,Wisconsin,south
-12,James Madison,south
-13,Vermont,south
-4,Duke,south
-6,Texas Tech,south
-11,NC State,south
-14,Oakland,south
-3,Kentucky,south
-10,Colorado,south
-7,Florida,south
-15,Western Kentucky,south
-2,Marquette,south
-1,Purdue,midwest
-16,Grambling St.,midwest
-9,TCU,midwest
-8,Utah St.,midwest
+1,Auburn,south
+16,Alabama St./Saint Francis,south
+9,Creighton,south
+8,Louisville,south
+5,Michigan,south
+12,UC San Diego,south
+13,Yale,south
+4,Texas A&M,south
+6,Ole Miss,south
+11,San Diego St.North Carolina,south
+14,Lipscomb,south
+3,Iowa State,south
+10,New Mexico,south
+7,Marquette,south
+15,Bryant,south
+2,Michigan State,south
+1,Houston,midwest
+16,SIU Edwardsville,midwest
+9,Georgia,midwest
+8,Gonzaga,midwest
 12,McNeese,midwest
-5,Gonzaga,midwest
-4,Kansas,midwest
-13,Samford,midwest
-6,South Carolina,midwest
-11,Oregon,midwest
-3,Creighton,midwest
-14,Akron,midwest
-10,Colorado St.,midwest
-7,Texas,midwest
+5,Clemson,midwest
+4,Purdue,midwest
+13,High Point,midwest
+6,Illinois,midwest
+11,Texas/Xavier,midwest
+3,Kentucky,midwest
+14,Troy,midwest
+10,Utah State,midwest
+7,UCLA,midwest
 2,Tenessee,midwest
-15,Saint Peter's,midwest
-1,UConn,east
-16,Stetson,east
-9,Northwestern,east
-8,Florida Atlantic,east
-5,San Diego St.,east
-12,UAB,east
-13,Yale,east
-4,Auburn,east
+15,Wofford,midwest
+1,Duke,east
+16,American/Mount St. Mary's,east
+9,Baylor,east
+8,Mississippi State,east
+5,Oregon,east
+12,Liberty,east
+13,Akron,east
+4,Arizona,east
 6,BYU,east
-11,Duquesne,east
-14,Morehead St.,east
-3,Illinois,east
-10,Drake,east
-7,Washington St.,east
-15,South Dakota St.,east
-2,Iowa St.,east
-1,North Carolina,west
-16,Wagner,west
-9,Michigan St.,west
-8,Mississippi St.,west
-5,Saint Mary's,west
-12,Grand Canyon,west
-4,Alabama,west
-13,Charleston,west
-6,Clemson,west
-11,New Mexico,west
-14,Colgate,west
-3,Baylor,west
-7,Dayton,west
-10,Nevada,west
-2,Arizona,west
-15,Long Beach St.,west
+11,VCU,east
+14,Montana,east
+3,Wisconsin,east
+10,Vanderbilt,east
+7,Saint Mary's,east
+15,Robert Morris,east
+2,Alabama,east
+1,Florida,west
+16,Norfolk State,west
+9,Oklahoma,west
+8,Uconn,west
+5,Memphis,west
+12,Colorado State,west
+4,Maryland,west
+13,Grand Canyon,west
+6,Missouri,west
+11,Drake,west
+14,UNCW,west
+3,Texas Tech,west
+7,Kansas,west
+10,Arkansas,west
+2,St. John's,west
+15,Omaha,west
