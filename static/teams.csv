@@ -1,65 +1,66 @@
 seed,team,region
-1,Auburn,south
-16,Alabama St.,south
-9,Creighton,south
-8,Louisville,south
-5,Michigan,south
-12,UC San Diego,south
-13,Yale,south
-4,Texas A&M,south
-6,Ole Miss,south
-11,UNC,south
-14,Lipscomb,south
-3,Iowa State,south
-10,New Mexico,south
-7,Marquette,south
-15,Bryant,south
-2,Michigan State,south
-1,Houston,midwest
-16,SIU Edwardsville,midwest
-9,Georgia,midwest
-8,Gonzaga,midwest
-12,McNeese,midwest
-5,Clemson,midwest
-4,Purdue,midwest
-13,High Point,midwest
-6,Illinois,midwest
-11,Xavier,midwest
-3,Kentucky,midwest
-14,Troy,midwest
-10,Utah State,midwest
-7,UCLA,midwest
-2,Tennessee,midwest
-15,Wofford,midwest
-1,Duke,east
-16,Mount St. Mary's,east
-9,Baylor,east
-8,Mississippi State,east
-5,Oregon,east
-12,Liberty,east
-13,Akron,east
-4,Arizona,east
-6,BYU,east
-11,VCU,east
-14,Montana,east
-3,Wisconsin,east
-10,Vanderbilt,east
-7,Saint Mary's,east
-15,Robert Morris,east
-2,Alabama,east
-1,Florida,west
-16,Norfolk State,west
-9,Oklahoma,west
-8,UConn,west
-5,Memphis,west
-12,Colorado State,west
-4,Maryland,west
-13,Grand Canyon,west
-6,Missouri,west
-11,Drake,west
-14,UNCW,west
-3,Texas Tech,west
-7,Kansas,west
-10,Arkansas,west
-2,St. John's,west
-15,Omaha,west
+1,Duke,East
+2,UConn,East
+3,Michigan State,East
+4,Kansas,East
+5,St. John's,East
+6,Louisville,East
+7,UCLA,East
+8,Ohio State,East
+9,TCU,East
+10,UCF,East
+11,South Florida,East
+12,Northern Iowa,East
+13,Cal Baptist,East
+14,North Dakota State,East
+15,Furman,East
+16,Siena,East
+1,Michigan,Midwest
+2,Iowa State,Midwest
+3,Virginia,Midwest
+4,Alabama,Midwest
+5,Texas Tech,Midwest
+6,Tennessee,Midwest
+7,Kentucky,Midwest
+8,Georigia,Midwest
+9,Saint Louis,Midwest
+10,Santa CLara,Midwest
+11,SMU/Miami Ohio,Midwest
+12,Akron,Midwest
+13,Hofstra,Midwest
+14,Wright State,Midwest
+15,Tennessee State,Midwest
+16,Howard/UMBC,Midwest
+1,Florida,South
+2,Houston,South
+3,Illinois,South
+4,Nebraska,South
+5,Vanderbilt,South
+6,UNC,South
+7,Saint Mary's,South
+8,Clemson,South
+9,Iowa,South
+10,Texas A&M,South
+11,VCU,South
+12,McNeese,South
+13,Troy,South
+14,Penn,South
+15,Idaho,South
+16,Lehigh/Prarie View,South
+1,Arizona,West
+2,Purdue,West
+3,Gonzaga,West
+4,Arkansas,West
+5,Wisconsin,West
+6,BYU,West
+7,Miami,West
+8,Villanova,West
+9,Utah State,West
+10,Missouri,West
+11,NC State/Texas,West
+12,High Point,West
+13,Hawaii,West
+14,Kennesaw State,West
+15,Queens (N.C.),West
+16,Long Island,West
+
