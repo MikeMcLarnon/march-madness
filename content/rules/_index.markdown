@@ -20,7 +20,7 @@ h1 {
 * Winner. Takes. All.
 
 ### Good Luck!
-Send your picks to Mike or Kelly!
+Submit your picks [here](https://docs.google.com/forms/d/e/1FAIpQLSe-6k1tZRRZ7dfALoXXXQJOeUCToQ7TqDWKSF_UpqRqrSsk9w/viewform?usp=publish-editor)
 
 <br>
 
