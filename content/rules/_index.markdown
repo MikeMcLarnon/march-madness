@@ -2,6 +2,7 @@
 title: Rules
 ---
 
+
 <style type="text/css">
 h1 {
   text-align: center;
