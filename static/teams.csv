@@ -25,12 +25,12 @@ seed,team,region
 8,Georgia,Midwest
 9,Saint Louis,Midwest
 10,Santa Clara,Midwest
-11,SMU/Miami Ohio,Midwest
+11,Miami Ohio,Midwest
 12,Akron,Midwest
 13,Hofstra,Midwest
 14,Wright State,Midwest
 15,Tennessee State,Midwest
-16,Howard/UMBC,Midwest
+16,Howard,Midwest
 1,Florida,South
 2,Houston,South
 3,Illinois,South
@@ -46,7 +46,7 @@ seed,team,region
 13,Troy,South
 14,Penn,South
 15,Idaho,South
-16,Lehigh/Prarie View,South
+16,Prarie View,South
 1,Arizona,West
 2,Purdue,West
 3,Gonzaga,West
@@ -57,7 +57,7 @@ seed,team,region
 8,Villanova,West
 9,Utah State,West
 10,Missouri,West
-11,NC State/Texas,West
+11,Texas,West
 12,High Point,West
 13,Hawaii,West
 14,Kennesaw State,West
